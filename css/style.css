@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Golos+Text:wght@400;500;600;700&family=Montserrat:wght@300;600&display=swap');
+
+body {
+    background-color: #D8E3E7;
+    padding-top: 40px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+div.main {
+    width: 1000px;
+    background-color: #ffffff;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 13px 13px 20px;
+}
+
+div.head {
+    padding: 10px 20px;
+    font-family: "Faculty Glyphic", sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+div.info {
+    display: flex;
+}
+
+div.left-block {
+    width: 50%;
+    margin: 5px 0px 18px 20px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+div.left-block .photo {
+    height: 502px;
+    background-image: url("../img/photo.jpg");
+    border-radius: 8px;
+    background-position: 10% 19%;
+}
+
+div.right-block {
+    width: 50%;
+    margin: 5px 20px 18px;
+    border-radius: 8px;
+    background-color: #8ac9f3;
+    padding: 0px 20px 0px;
+    box-sizing: border-box;
+    font-size: 19px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+div.right-block .ci {
+    margin: 0px 0px 6px;
+    font-weight: bold;
+    text-decoration: underline;
+
+}
+
+div.right-block .contacts {
+    display: flex;
+}
+
+div.right-block .contacts .icons img {
+    width: 25px;
+    display: block;
+    margin: 8px;
+}
+
+div.right-block .contacts .data .contact {
+    margin: 6px;
+}
+
+@media (max-width: 600px) {
+
+    div.main {
+        width: 500px;
+    }
+
+    div.info {
+        display: block;
+        padding-bottom: 20px;
+        box-sizing: border-box;
+    }
+
+    div.left-block,
+    div.right-block {
+        width: 90%;
+        margin: auto;
+    }
+
+    div.right-block {
+        padding: 10px 20px 10px;
+    }
+
+    .top {
+        margin-top: 5px;
+    }
+}
