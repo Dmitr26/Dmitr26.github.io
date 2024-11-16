@@ -1,0 +1,1 @@
+An image folder that contains my photo and three svg images - phone, Telegram and GitHub symbols
