@@ -10,7 +10,7 @@ body {
 }
 
 div.main {
-    width: 1000px;
+    width: 1400px;
     background-color: #ffffff;
     margin: auto;
     border-radius: 10px;
@@ -18,7 +18,7 @@ div.main {
 }
 
 div.head {
-    padding: 10px 20px;
+    padding: 15px 20px;
     font-family: "Faculty Glyphic", sans-serif;
     font-weight: bold;
     font-size: 50px;
@@ -31,8 +31,8 @@ div.info {
 }
 
 div.left-block {
-    width: 50%;
-    margin: 5px 0px 18px 20px;
+    width: 35%;
+    margin: 5px 0 18px 20px;
     padding: 10px;
     box-sizing: border-box;
 }
@@ -45,19 +45,29 @@ div.left-block .photo {
 }
 
 div.right-block {
-    width: 50%;
+    width: 65%;
     margin: 5px 20px 18px;
     border-radius: 8px;
     background-color: #8ac9f3;
-    padding: 0px 20px 0px;
+    padding: 10px 20px;
     box-sizing: border-box;
     font-size: 19px;
     line-height: 1.5;
     text-align: justify;
 }
 
-div.right-block .ci {
-    margin: 0px 0px 6px;
+div.right-block p {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+div.right-block p.bottom {
+    margin-bottom: 0;
+}
+
+div.right-block p.ci,
+div.right-block p.pi {
+    margin-top: 25px;
     font-weight: bold;
     text-decoration: underline;
 
@@ -67,14 +77,39 @@ div.right-block .contacts {
     display: flex;
 }
 
-div.right-block .contacts .icons img {
+div.right-block .contacts .contact {
+    display: flex;
+}
+
+div.right-block .contacts .contact .icon img {
     width: 25px;
     display: block;
     margin: 8px;
 }
 
-div.right-block .contacts .data .contact {
+div.right-block .contacts .contact-link {
+    margin-right: 50px;
+}
+
+div.right-block .contacts .contact-link .contact {
     margin: 6px;
+}
+
+.projects {
+    margin-top: 10px;
+}
+
+.project {
+    display: flex;
+}
+
+.project-name {
+    font-weight: bold;
+    margin-right: 30px;
+}
+
+.project-link {
+    margin-right: 30px;
 }
 
 @media (max-width: 600px) {
@@ -97,6 +132,14 @@ div.right-block .contacts .data .contact {
 
     div.right-block {
         padding: 10px 20px 10px;
+    }
+
+    div.right-block .contacts {
+        flex-direction: column;
+    }
+
+    div.right-block .project {
+        flex-direction: column;
     }
 
     .top {
